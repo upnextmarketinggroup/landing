@@ -18,4 +18,10 @@ To restore the original placeholder, remove `hidden` from that block. When the f
 
 Run `python3 -m http.server 8080` in this folder and visit http://localhost:8080.
 
-The fonts use Google Fonts with local fallbacks. No analytics, cookies, or visitor uploads are included.
+## Button title lettering
+
+Button titles use `assets/fonts/sunborn-titles.woff`, a small font reconstructed from the exact Sunborn letter outlines exported from a copy of the Brandem Canva logo. The [copied lettering sheet](https://www.canva.com/design/DAHWQvaI9EI/edit) is retained for future updates. The original logo design was preserved.
+
+This asset contains the letters used in the four current button titles, with uppercase and lowercase text mapped to Sunborn's capital letter shapes. It is a lettering subset, not the complete commercial Sunborn font. If a future title needs additional letters, export those letters from the same Canva design and extend the asset. The existing title sizes remain 18px on desktop and 16px on mobile; subtitles and other page text continue to use Antic.
+
+Antic uses Google Fonts with local fallbacks. No analytics, cookies, or visitor uploads are included.

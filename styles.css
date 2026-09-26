@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Antic&display=swap');
 
+@font-face{font-family:'Sunborn';src:url('assets/fonts/sunborn-titles.woff') format('woff');font-style:normal;font-weight:400;font-display:swap}
+
 :root{color-scheme:light;--paper:#f6f1e6;--ink:#191a1e;--blue:#0066ff;--soft-blue:#6ba4ff;--line:rgba(25,26,30,.2);font-family:'Antic',Arial,sans-serif;color:var(--ink);background:var(--paper)}
 *{box-sizing:border-box}
 [hidden]{display:none!important}
@@ -39,7 +41,7 @@ a.link-card:hover{transform:translateY(-2px);background:var(--ink);color:var(--p
 a.link-card:first-child:hover{background:var(--ink);border-color:var(--ink)}
 .link-icon{width:34px;font-size:27px;line-height:1;text-align:center}
 .link-copy{flex:1;min-width:0}
-.link-title{display:block;font-size:18px;line-height:1.2}
+.link-title{display:block;font-family:'Sunborn','Antic',Arial,sans-serif;font-size:18px;font-weight:400;line-height:1.2}
 .link-subtitle{display:block;margin-top:7px;font-size:13px;line-height:1.35;opacity:.72}
 .coming-soon{padding:6px 8px;border:1px solid currentColor;border-radius:50px;font-size:8px;letter-spacing:.1em;white-space:nowrap;opacity:.6}
 .link-arrow{font-size:20px;color:var(--blue)}

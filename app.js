@@ -22,7 +22,17 @@
     const subtitle = document.createElement('span'); subtitle.className = 'link-subtitle'; subtitle.textContent = item.subtitle;
     copy.append(title, subtitle);
     const badge = document.createElement('span');
-    badge.className = linked ? 'link-arrow' : 'coming-soon'; badge.textContent = linked ? '↗' : 'COMING SOON';
+    badge.className = linked ? 'link-arrow' : 'coming-soon';
+    if (linked) {
+      badge.setAttribute('aria-hidden', 'true');
+      const arrow = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+      arrow.setAttribute('viewBox', '0 0 24 24'); arrow.setAttribute('focusable', 'false');
+      const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      path.setAttribute('d', 'M5 19 19 5M5 5h14v14');
+      path.setAttribute('fill', 'none'); path.setAttribute('stroke', 'currentColor');
+      path.setAttribute('stroke-width', '2'); path.setAttribute('stroke-linecap', 'round'); path.setAttribute('stroke-linejoin', 'round');
+      arrow.append(path); badge.append(arrow);
+    } else badge.textContent = 'COMING SOON';
     card.append(copy, badge); document.querySelector('#links').append(card);
   }
 

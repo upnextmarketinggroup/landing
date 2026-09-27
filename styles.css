@@ -41,7 +41,8 @@ a.link-card:first-child:hover{background:var(--ink);border-color:var(--ink)}
 .link-title{display:block;font-family:'Sunborn','Antic',Arial,sans-serif;font-size:18px;font-weight:400;line-height:1.2}
 .link-subtitle{display:block;margin-top:7px;font-size:13px;line-height:1.35;opacity:.72}
 .coming-soon{padding:6px 8px;border:1px solid currentColor;border-radius:50px;font-size:8px;letter-spacing:.1em;white-space:nowrap;opacity:.6}
-.link-arrow{font-size:20px;color:var(--blue)}
+.link-arrow{display:inline-flex;flex-shrink:0;color:var(--blue)}
+.link-arrow svg{display:block;width:20px;height:20px}
 .link-card:first-child .link-arrow{color:var(--ink)}
 .closing{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:28px;font-size:10px;letter-spacing:.12em}
 .closing button{padding:8px 0;border:0;border-bottom:1px solid currentColor;background:none;color:var(--ink)}

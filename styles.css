@@ -21,12 +21,10 @@ header{padding:28px max(24px,5vw);border-bottom:1px solid var(--line)}
 .page-content{width:min(calc(100% - 40px),620px);margin:0 auto;padding:54px 0 48px;flex:1}
 .identity{text-align:center}
 .hero-logo{width:min(100%,440px);margin:0 auto 40px}
-.eyebrow{font-size:11px;letter-spacing:.14em;text-transform:uppercase}
-.location{display:flex;align-items:center;justify-content:center;gap:9px}
-.status-dot{width:7px;height:7px;background:var(--blue);border-radius:50%}
 h1{font-family:'Antic',Arial,sans-serif;font-size:clamp(38px,8vw,62px);font-weight:400;line-height:1.06;letter-spacing:-.045em;margin:24px 0 22px}
 h1:focus{outline:none}
 h1 em{font-style:normal;color:var(--blue)}
+h1.brand-hook{width:min(100%,520px);margin:0 auto 14px;font-size:28px;font-weight:700;line-height:1.2;letter-spacing:-.02em}
 .description{width:min(100%,470px);margin:0 auto;font-size:17px;line-height:1.55;color:#505157}
 .video-placeholder{width:100%;aspect-ratio:16/9;margin:28px auto 0;border:1px solid var(--ink);border-radius:6px;background:linear-gradient(145deg,#e8e1d3,#f6f1e6);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;color:var(--ink)}
 .video-placeholder:focus{outline:none}
@@ -68,7 +66,7 @@ body.intro-active{overflow:hidden}
 
 @media(max-width:520px){
   .page-content{padding-top:40px}
-  .hero-logo{width:min(92%,350px);margin-bottom:34px}h1{font-size:43px}.description{font-size:15px}
+  .hero-logo{width:min(92%,350px);margin-bottom:34px}h1{font-size:43px}h1.brand-hook{font-size:24px}.description{font-size:15px}
   nav{margin-top:28px}.link-card{min-height:82px;padding:17px 14px;gap:12px}.link-title{font-size:16px}.link-subtitle{font-size:12px}.coming-soon{font-size:7px}
   footer{padding:22px 20px;font-size:8px}.closing{font-size:9px}
 }

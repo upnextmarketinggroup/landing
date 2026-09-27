@@ -32,9 +32,7 @@ h1 em{font-style:normal;color:var(--blue)}
 .video-placeholder:focus{outline:none}
 .play-icon{display:grid;place-items:center;width:62px;height:62px;padding-left:4px;border:1px solid var(--ink);border-radius:50%;font-size:18px;color:var(--blue)}
 .video-label{font-size:10px;letter-spacing:.16em}
-.section-label{display:flex;justify-content:space-between;align-items:center;margin:52px 0 14px;font-size:10px;letter-spacing:.12em}
-.section-label span:last-child{font-size:20px;color:var(--blue)}
-nav{display:grid;gap:10px}
+nav{display:grid;gap:10px;margin-top:32px}
 .link-card{display:flex;align-items:center;gap:18px;width:100%;min-height:88px;padding:19px 20px;border:1px solid var(--ink);border-radius:6px;background:transparent;color:var(--ink);text-align:left;transition:transform .2s,background .2s,color .2s}
 a.link-card:hover{transform:translateY(-2px);background:var(--ink);color:var(--paper)}
 .link-card:first-child{border-color:var(--soft-blue);background:var(--soft-blue);color:var(--ink)}
@@ -71,7 +69,7 @@ body.intro-active{overflow:hidden}
 @media(max-width:520px){
   .page-content{padding-top:40px}
   .hero-logo{width:min(92%,350px);margin-bottom:34px}h1{font-size:43px}.description{font-size:15px}
-  .section-label{margin-top:44px}.link-card{min-height:82px;padding:17px 14px;gap:12px}.link-title{font-size:16px}.link-subtitle{font-size:12px}.coming-soon{font-size:7px}
+  nav{margin-top:28px}.link-card{min-height:82px;padding:17px 14px;gap:12px}.link-title{font-size:16px}.link-subtitle{font-size:12px}.coming-soon{font-size:7px}
   footer{padding:22px 20px;font-size:8px}.closing{font-size:9px}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}#intro.running{display:none}}

@@ -37,7 +37,6 @@ nav{display:grid;gap:10px;margin-top:32px}
 a.link-card:hover{transform:translateY(-2px);background:var(--ink);color:var(--paper)}
 .link-card:first-child{border-color:var(--soft-blue);background:var(--soft-blue);color:var(--ink)}
 a.link-card:first-child:hover{background:var(--ink);border-color:var(--ink)}
-.link-icon{width:34px;font-size:27px;line-height:1;text-align:center}
 .link-copy{flex:1;min-width:0}
 .link-title{display:block;font-family:'Sunborn','Antic',Arial,sans-serif;font-size:18px;font-weight:400;line-height:1.2}
 .link-subtitle{display:block;margin-top:7px;font-size:13px;line-height:1.35;opacity:.72}

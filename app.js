@@ -17,15 +17,13 @@
     const card = document.createElement(linked ? 'a' : 'div');
     card.className = 'link-card';
     if (linked) card.href = url.href;
-    const icon = document.createElement('span');
-    icon.className = 'link-icon'; icon.textContent = item.icon; icon.setAttribute('aria-hidden', 'true');
     const copy = document.createElement('span'); copy.className = 'link-copy';
     const title = document.createElement('span'); title.className = 'link-title'; title.textContent = item.title;
     const subtitle = document.createElement('span'); subtitle.className = 'link-subtitle'; subtitle.textContent = item.subtitle;
     copy.append(title, subtitle);
     const badge = document.createElement('span');
     badge.className = linked ? 'link-arrow' : 'coming-soon'; badge.textContent = linked ? '↗' : 'COMING SOON';
-    card.append(icon, copy, badge); document.querySelector('#links').append(card);
+    card.append(copy, badge); document.querySelector('#links').append(card);
   }
 
   function animate(element, frames, options) {

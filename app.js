@@ -15,14 +15,14 @@
     try { url = new URL(item.url); } catch { /* Empty URLs are placeholders. */ }
     const linked = url && ['https:', 'http:', 'mailto:', 'tel:'].includes(url.protocol);
     const card = document.createElement(linked ? 'a' : 'div');
-    card.className = 'link-card';
+    card.className = item.ribbon ? 'link-card ribbon-card' : 'link-card';
     if (linked) card.href = url.href;
     const copy = document.createElement('span'); copy.className = 'link-copy';
     const title = document.createElement('span'); title.className = 'link-title'; title.textContent = item.title;
     const subtitle = document.createElement('span'); subtitle.className = 'link-subtitle'; subtitle.textContent = item.subtitle;
     copy.append(title, subtitle);
     const badge = document.createElement('span');
-    badge.className = linked ? 'link-arrow' : 'coming-soon';
+    badge.className = linked ? 'link-arrow' : item.ribbon ? 'coming-soon-ribbon' : 'coming-soon';
     if (linked) {
       badge.setAttribute('aria-hidden', 'true');
       const arrow = document.createElementNS('http://www.w3.org/2000/svg', 'svg');

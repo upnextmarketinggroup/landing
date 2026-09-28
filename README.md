@@ -6,7 +6,7 @@ The logo fills with color, its apostrophe launches upward, and the landing page 
 
 ## Add links
 
-Edit `links` in `config.js`. Each item has `title`, `subtitle`, and `url`. Empty URLs display non-clickable Coming soon cards. Set a full `https://` URL, `mailto:` address, or `tel:` number to activate a card.
+Edit `links` in `config.js`. Each item has `title`, `subtitle`, and `url`. Empty URLs display non-clickable Coming soon cards; `ribbon: true` gives the website card its diagonal sticker. Set a full `https://` URL, `mailto:` address, or `tel:` number to activate a card. When the website is ready, add its URL and remove `ribbon: true`.
 
 ## Restore the video area
 

@@ -39,6 +39,8 @@ a.link-card:first-child:hover{background:var(--ink);border-color:var(--ink)}
 .link-title{display:block;font-family:'Sunborn','Antic',Arial,sans-serif;font-size:18px;font-weight:400;line-height:1.2}
 .link-subtitle{display:block;margin-top:7px;font-size:13px;line-height:1.35;opacity:.72}
 .coming-soon{padding:6px 8px;border:1px solid currentColor;border-radius:50px;font-size:8px;letter-spacing:.1em;white-space:nowrap;opacity:.6}
+.ribbon-card{position:relative;overflow:hidden;padding-right:90px}
+.coming-soon-ribbon{position:absolute;top:16px;right:-35px;width:150px;padding:7px 0;transform:rotate(35deg);background:var(--blue);color:var(--paper);box-shadow:0 1px 4px rgb(25 26 30/.18);font-size:9px;line-height:1;letter-spacing:.13em;text-align:center;white-space:nowrap}
 .link-arrow{display:inline-flex;flex-shrink:0;color:var(--blue)}
 .link-arrow svg{display:block;width:20px;height:20px}
 .link-card:first-child .link-arrow{color:var(--ink)}
